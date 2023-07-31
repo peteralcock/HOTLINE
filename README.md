@@ -3,10 +3,7 @@ Urban SMS-based in-home service delivery logistics management platform
 
 ### WTF is this??
 
-Hotline is an extremely low-cost, open-source platform for validating 
-delivery-based business models via anonymized text-messaging. Delivery services are becoming increasingly common, whether they be for bento boxes, flowers, cookies, candy, or anything else you can imagine.
-
-Hotline allows entrepreneurs to quickly and cheaply set up the infrastructure necessary to test or operate a beta/MVP solely via text messaging. Hotline also allows you to start with a closed beta by requiring referrals to start making orders. No need to create a website or payment processing.  
+Hotline is an order processing platform for delivery-based business models via anonymized text-messaging. Delivery services are becoming increasingly common, whether they be for bento boxes, flowers, cookies, candy, or anything else you can imagine. Hotline allows entrepreneurs to quickly and cheaply set up the infrastructure necessary to test or operate a beta/MVP solely via text messaging. Hotline also allows you to start with a closed beta by requiring referrals to start making orders. No need to create a website or payment processing.  
 
 *Anonymized? What do you mean?*
 
@@ -76,7 +73,7 @@ But it's a start.
 1) Create a twilio (and get a free number) and create a heroku account. 
 
 1.5) Set the webhook for your SMS number in twilio to your heroku url e.g.
-<appname>.herokuapp.com/communication/receive
+my.hotline.nyc/communication/receive
 
 2) Add the necessary twilio config to a .env file. See .env.example for the list
 of necessary data. 
