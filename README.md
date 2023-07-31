@@ -1,4 +1,4 @@
-# HOTLINE NYC
+# HOTLINE
 Urban SMS-based in-home service delivery logistics management platform
 
 ### WTF is this??
