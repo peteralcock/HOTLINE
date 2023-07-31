@@ -4,25 +4,15 @@ Urban SMS-based in-home service delivery logistics management platform
 ### WTF is this??
 
 Hotline is an extremely low-cost, open-source platform for validating 
-delivery-based business models via anonymized text-messaging. Delivery services are becoming increasingly common, whether they be for bento boxes, [cookies](http://www.northbynorthwestern.com/story/magazine-project-cookie-by-catherine-rolfe/), [sandwiches](http://www.northbynorthwestern.com/story/michael-wilbon-on-journalism-and-nus-mythic-sandwi/), or anything else.
+delivery-based business models via anonymized text-messaging. Delivery services are becoming increasingly common, whether they be for bento boxes, flowers, cookies, candy, or anything else you can imagine.
 
-This app allows entrepreneurs to quickly and cheaply set up the infrastructure
-necessary to test or operate a beta/MVP solely via text messaging.
-
-
-This app also allows you to start with a closed beta by requiring referrals to start making orders. No need to create a website or payment processing.  
+Hotline allows entrepreneurs to quickly and cheaply set up the infrastructure necessary to test or operate a beta/MVP solely via text messaging. Hotline also allows you to start with a closed beta by requiring referrals to start making orders. No need to create a website or payment processing.  
 
 *Anonymized? What do you mean?*
 
 Users and admins interact solely through the twilio number, so you don't expose your mobile phone number directly to the admins (and vice versa). Admins also have the ability to destroy all records with one command, in case they determine they want to shut down their market validation and remove all data. Why? I simply didn't like the idea of a delivery person having your address, order, and phone number all at the same time. You don't know who they are, so why give them that data? 
 
-
-*What about having a menu? What about spreading the word?*
-
-Not my problem. Go print your menu along with this twilio phone number on some quarter sheets. Or submit a PR with that feature. Be creative and cheap. 
-
-
-### Ok, so how does it work? 
+### How does it work? 
 
 Let's assume that we have three users to start with: an admin, a person who
 wants to be a new user, and a person who is already an existing user
@@ -81,7 +71,7 @@ But it's a start.
 
 4) run $ foreman start
 
-### DEPLOY IN A FEW EASY STEPS! 
+### Production Deployment
 
 1) Create a twilio (and get a free number) and create a heroku account. 
 
