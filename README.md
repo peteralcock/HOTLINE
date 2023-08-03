@@ -1,5 +1,5 @@
 # HOTLINE
-SMS-based delivery service management
+SMS-based delivery service platform
 
 ### WTF is this??
 
