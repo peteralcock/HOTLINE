@@ -1,5 +1,5 @@
 # HOTLINE
-Urban SMS-based in-home service delivery logistics management platform
+SMS-based delivery service management
 
 ### WTF is this??
 
