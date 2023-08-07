@@ -1,99 +1,65 @@
-# HOTLINE
-SMS-based delivery service platform
+# Secret Hotline
+## SMS-based Delivery Service Platform
 
-### WTF is this??
+### Introduction
 
-Hotline is an order processing platform for delivery-based business models via anonymized text-messaging. Delivery services are becoming increasingly common, whether they be for bento boxes, flowers, cookies, candy, or anything else you can imagine. Hotline allows entrepreneurs to quickly and cheaply set up the infrastructure necessary to test or operate a beta/MVP solely via text messaging. Hotline also allows you to start with a closed beta by requiring referrals to start making orders. No need to create a website or payment processing.  
+Hotline is an innovative platform for order processing, specifically designed for delivery-centric businesses. This platform capitalizes on the prevalent trend of anonymous text messaging to facilitate an efficient delivery service for a wide range of products - from bento boxes and flowers to cookies and candy. Hotline provides an accessible means for entrepreneurs to establish the requisite infrastructure for a beta or a Minimum Viable Product (MVP) using solely text messaging. 
 
-*Anonymized? What do you mean?*
+Additionally, Hotline supports a closed-beta model, facilitating referral-based order placements. It obviates the need for creating a separate website or managing a payment processing system. 
 
-Users and admins interact solely through the twilio number, so you don't expose your mobile phone number directly to the admins (and vice versa). Admins also have the ability to destroy all records with one command, in case they determine they want to shut down their market validation and remove all data. Why? I simply didn't like the idea of a delivery person having your address, order, and phone number all at the same time. You don't know who they are, so why give them that data? 
+### Privacy First
 
-### How does it work? 
+The core functionality of Hotline resides in its ability to allow interaction between users and admins through the Twilio number, thereby eliminating the need for direct exposure of personal mobile numbers. Admins are provided with the power to erase all records with a single command, offering them the flexibility to close their market validation and erase all associated data when required. This feature emphasizes privacy as it prevents delivery personnel from accessing sensitive user data including addresses and phone numbers.
 
-Let's assume that we have three users to start with: an admin, a person who
-wants to be a new user, and a person who is already an existing user
+### How It Works
 
+The workings of Hotline can be best understood through a practical example, let's consider three actors: an admin, a potential user, and an existing user.
 
-- EXISTING USER COMMANDS
-  - "get referral"
-      (gives you a referral to give to someone else)
-  - "5 cookies to 1 Wacker Dr" 
-      (will send an admin your order and where it is to be delivered)
-      admin will see a message like the following:
-      ``` "Order #19  5 cookies to 1 Wacker Dr" ```
-  - "remove me" (TODO)
-      (remove this user and records from the system)
+#### Existing User Commands
 
-- NEW USER COMMANDS
-   - "referral \<referral code\>"
-     (consume a referral. If valid, you will be told if you are admitted or if you need more referrals)
+- `get referral`: Returns a referral code that can be shared with others.
+- `5 cookies to 1 Wacker Dr`: Sends your order and the delivery address to an admin. The admin would receive a message similar to `Order #19  5 cookies to 1 Wacker Dr`.
+- `remove me` (Under development): Removes the user and their records from the system.
 
-- ADMIN COMMANDS
-  - "nuke all" (todo) 
-    (nuke everything)
-  - "get referral"
-    (generate a referral that, when used, will automatically admit the user that
-     consumes it)
-  - "close"
-    (close yourself for business)
-  - "open"
-    (open yourself for business)
-  - "reply #9 I'm here"
-    (reply to user who submitted order 9 with the message "I'm here")
+#### New User Commands
 
-### What Can I configure and where?
-    Currently, all config is in app/models/user/settings.rb. You can set.
-    - How many referrals are required to gain admittance (including 0 for public beta)
-    - Set a cap for how many referrals a user can create in the # of days specify
-    - Specify the number of days 
+- `referral <referral code>`: Consumes a referral code. If the code is valid, you will be notified of your admittance status.
 
+#### Admin Commands
 
-#### A Brief Forward
+- `nuke all` (Under development): Erases all data from the system.
+- `get referral`: Generates a referral code that will admit the user who uses it.
+- `close`: Ceases the admin's business operations.
+- `open`: Resumes the admin's business operations.
+- `reply #9 I'm here`: Responds to the user who submitted order #9 with the message "I'm here".
 
-I've got no tests. I've got no views. I've barely got any config. 
+### Configuration
 
-But it's a start. 
+Currently, all configuration is handled in `app/models/user/settings.rb`. Here, you can set:
+- The number of referrals required for admittance (including 0 for public beta).
+- A cap on the number of referrals a user can create within a specified number of days.
+- The specific number of days.
 
+### Project Status
 
-###GETTING STARTED LOCALLY
+Please note that as of now, the project lacks tests and views. Additionally, the configuration options are minimal. However, we consider this a solid start and a foundation for future development.
 
-0) clone this repo
+### Getting Started Locally
 
-1) Bundle install
-
-2) Migrate and Seed that DB
-
-3) Add necessary config stuff into a *.env file (more details on that later)
-
-4) run $ foreman start
+1. Clone this repository.
+2. Run `bundle install`.
+3. Migrate and seed the database.
+4. Add necessary configuration details into a `.env` file (more details will follow).
+5. Run `foreman start`.
 
 ### Production Deployment
 
-1) Create a twilio (and get a free number) and create a heroku account. 
-
-1.5) Set the webhook for your SMS number in twilio to your heroku url e.g.
-my.hotline.nyc/communication/receive
-
-2) Add the necessary twilio config to a .env file. See .env.example for the list
-of necessary data. 
-
-3) from the command line, create a heroku app with $ heroku create
-
-4)Install config pusher
-```$ heroku plugins:install git://github.com/ddollar/heroku-config.git 
-
-5) run it!
-```$ heroku config:push
-
-6) push to heroku
-``` $ git push heroku master
-
-7) migrate that DB
-
-``` heroku run rake db:migrate
-
-8) Become an admin!
-
-``` Text "get referral" to the twilio number from your phone. Poof, you are an admin! 
-
+1. Sign up for a Twilio account (and get a free number) and create a Heroku account.
+2. Set the webhook for your SMS number in Twilio to your Heroku URL, e.g., my.hotline.nyc/communication/receive.
+3. Add the necessary Twilio configuration to a `.env` file. Refer to `.env.example` for the list of necessary data.
+4. From the command line, create a Heroku app with `heroku create`.
+5. Install the configuration pusher using `heroku plugins:install git://github.com/ddollar/heroku-config.git`.
+6. Push the configuration to Heroku using `heroku config:push`.
+7. Push the project to Heroku using `git push heroku master`.
+8. Migrate the database using `heroku run rake db:migrate`.
+9. Send "get referral" from your phone to the Twilio number to become an admin.
