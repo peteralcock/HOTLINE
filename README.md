@@ -1,4 +1,4 @@
-# Secret Hotline
+# Hotline
 ## SMS-based Delivery Service Platform
 
 ### Introduction
