@@ -1,5 +1,6 @@
 # Hotline
 ## SMS-based Delivery Service Platform
+![](logo-hg.png)
 
 ### Introduction
 
