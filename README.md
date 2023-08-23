@@ -1,4 +1,4 @@
-# Secret Hotline
+# HOTLINE
 ## SMS Delivery Service Chatbot
 ![](logo-hg.png)
 
