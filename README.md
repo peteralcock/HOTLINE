@@ -1,7 +1,7 @@
 # HOTLINE
-Brooklyn-Made SMS Delivery Service Chatbot
+Brooklyn's SMS Delivery Service Chatbot
 
-## ![](logo-hg.png)
+![](logo-hg.png)
 
 
 ### Introduction
