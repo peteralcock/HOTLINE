@@ -1,5 +1,5 @@
 # HOTLINE
-Brooklyn's SMS Delivery Service Chatbot
+Brooklyn's Favorite SMS Delivery Service Chatbot
 
 ![](logo-hg.png)
 
