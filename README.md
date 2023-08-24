@@ -1,6 +1,8 @@
 # HOTLINE
-![](logo-hg.png)
-SMS Delivery Service Chatbot. Built for Brooklyn.
+
+## ![](logo-hg.png)
+
+### SMS Delivery Service Chatbot. Built for Brooklyn.
 
 ### Introduction
 
