@@ -1,7 +1,7 @@
 # HOTLINE
 Brooklyn's Favorite SMS Delivery Service Chatbot
 
-![](logo-hg.png)
+![](logo.png)
 
 
 ### Introduction
