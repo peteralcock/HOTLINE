@@ -2,7 +2,7 @@
 
 ## ![](logo-hg.png)
 
-### SMS Delivery Service Chatbot. Built for Brooklyn.
+###SMS Delivery Service Chatbot. Built for Brooklyn.
 
 ### Introduction
 
