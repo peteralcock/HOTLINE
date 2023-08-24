@@ -1,5 +1,5 @@
 # HOTLINE
-## SMS Delivery Service Chatbot
+## Brooklyn-Based SMS Delivery Service Chatbot
 ![](logo-hg.png)
 
 ### Introduction
