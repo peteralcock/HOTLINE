@@ -55,9 +55,4 @@ Please note that as of now, the project lacks tests and views. Additionally, the
 1. Sign up for a Twilio account (and get a free number) and create a Heroku account.
 2. Set the webhook for your SMS number in Twilio to your Heroku URL, e.g., my.hotline.nyc/communication/receive.
 3. Add the necessary Twilio configuration to a `.env` file. Refer to `.env.example` for the list of necessary data.
-4. From the command line, create a Heroku app with `heroku create`.
-5. Install the configuration pusher using `heroku plugins:install git://github.com/ddollar/heroku-config.git`.
-6. Push the configuration to Heroku using `heroku config:push`.
-7. Push the project to Heroku using `git push heroku master`.
-8. Migrate the database using `heroku run rake db:migrate`.
-9. Send "get referral" from your phone to the Twilio number to become an admin.
+4. Send "get referral" from your phone to the Twilio number to become an admin.
