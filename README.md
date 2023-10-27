@@ -1,5 +1,5 @@
 # HOTLINE
-Your Favorite Chatbot
+![](logo.png)
 
 Hotline is an innovative platform for order processing, specifically designed for delivery-centric businesses. This platform capitalizes on the prevalent trend of anonymous text messaging to facilitate an efficient delivery service for a wide range of products - from bento boxes and flowers to cookies and candy. Hotline provides an accessible means for entrepreneurs to establish the requisite infrastructure for a beta or a Minimum Viable Product (MVP) using solely text messaging. 
 
