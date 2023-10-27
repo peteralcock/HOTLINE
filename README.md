@@ -38,10 +38,6 @@ Currently, all configuration is handled in `app/models/user/settings.rb`. Here, 
 - A cap on the number of referrals a user can create within a specified number of days.
 - The specific number of days.
 
-### Project Status
-
-Please note that as of now, the project lacks tests and views. Additionally, the configuration options are minimal. However, we consider this a solid start and a foundation for future development.
-
 ### Getting Started Locally
 
 1. Clone this repository.
