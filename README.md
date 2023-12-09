@@ -1,6 +1,4 @@
-# HOTLINE
-![](logo.png)
-
+# HOTLINE NYC
 Hotline is an innovative platform for order processing, specifically designed for delivery-centric businesses. This platform capitalizes on the prevalent trend of anonymous text messaging to facilitate an efficient delivery service for a wide range of products - from bento boxes and flowers to cookies and candy. Hotline provides an accessible means for entrepreneurs to establish the requisite infrastructure for a beta or a Minimum Viable Product (MVP) using solely text messaging. 
 
 Additionally, Hotline supports a closed-beta model, facilitating referral-based order placements. It obviates the need for creating a separate website or managing a payment processing system. 
